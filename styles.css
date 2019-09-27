@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#hero {
+ display: block;
+ width: 100vw;
+ height: 85vh;
+ background: url(./images/your_verse.jpg) no-repeat;
+ background-position: 100% 100%;
+ background-size: cover;
+}
+
+#image-container {
+  display: flex;
+  justify-content: space-between;
+  margin:5px 0 20px 0;
+}
+
+.image-post {
+  width:24.5vw;
+  height:200px;
+  background-position: center;
+  background-size: cover;
+}
+
+#image-container>div:nth-child(1) {
+  background: url(./images/promo_iphone5s.jpg);
+}
+
+#image-container>div:nth-child(2) {
+  background: url(./images/promo_iphone5c.jpg);
+}
+
+#image-container>div:nth-child(3) {
+  background: url(./images/promo_30_years.jpg);
+}
+
+#image-container>div:nth-child(4) {
+  background: url(./images/promo_supplier.jpg);
+}
+
+footer {
+  height: 50px;
+  background-color: aqua;
+}
