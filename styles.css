@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100&display=swap');
 
+/* Styles to reset the css */
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Starting of page styles */
 #hero {
  display: block;
  width: 100vw;
- height: 85vh;
+ height: 40vw;
  background: url(./images/your_verse.jpg) no-repeat;
  background-position: 100% 100%;
  background-size: cover;
@@ -34,7 +37,7 @@ header nav ul {
   text-align: center;
   color:white;
   border-right: 1px solid rgb(128,128,128);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 #header-nav li:not(:last-child):hover {
@@ -66,6 +69,39 @@ header input {
 input:focus{
   outline: none;
 }
+
+#verse-text {
+  position: absolute;
+  margin: 15% auto 0 15%;
+  color:white;
+  text-align: center;
+  width:75vw;
+}
+
+#verse-text p, #verse-text a{
+  font-family: 'Roboto', sans-serif;
+}
+
+#verse-text p:first-child{
+  font-size: 54px;
+}
+
+#verse-text p:nth-child(3){
+  font-size: 32px;
+}
+
+#verse-text a{
+  padding-top: 20px;
+  text-decoration: none;
+  font-size: 28px;
+  color:white;
+}
+
+#verse-text a:hover{
+ text-decoration: underline;
+}
+
+/* Image grid styles */
 #image-container {
   display: flex;
   justify-content: space-between;
@@ -95,7 +131,32 @@ input:focus{
   background: url(./images/promo_supplier.jpg);
 }
 
+/* Footer Styles */
 footer {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
   height: 50px;
-  background-color: aqua;
+  font-size: 10px;
+  color:#6e6e6e;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+footer li+li::before {
+  content:"|";
+  margin: 0 5px;
+}
+
+footer a {
+  text-decoration: none;
+  color:blue;
+}
+
+footer a:hover{
+  text-decoration: underline;
 }
