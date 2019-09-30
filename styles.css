@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100&display=swap");
+
+/* Styles to reset the css */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Starting of page styles */
+#hero {
+  display: block;
+  width: 100vw;
+  height: 40vw;
+  background: url(./images/your_verse.jpg) no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+
+header {
+  position: absolute;
+  margin: 8% auto 0 15%;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border-radius: 5px;
+  background: linear-gradient(rgb(124, 124, 124), rgb(94, 94, 94));
+}
+
+#header-nav li {
+  width: 100px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  border-right: 1px solid rgb(128, 128, 128);
+  font-size: 13px;
+}
+
+#header-nav li:last-child {
+  width: 150px;
+}
+
+#header-nav li:not(:last-child):hover {
+  cursor: pointer;
+  background: linear-gradient(rgb(32, 32, 32), rgb(64, 64, 64));
+}
+
+header img {
+  vertical-align: middle;
+}
+
+header input {
+  width: 100px;
+  height: 20px;
+  border-radius: 10px;
+  background: linear-gradient(rgb(124, 124, 124), rgb(94, 94, 94));
+  background-image: url(./images/search_icon.png);
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  border: 1px solid grey;
+  background-size: 14px 14px;
+  padding-left: 22px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#verse-text {
+  position: absolute;
+  margin: 15% auto 0 15%;
+  color: white;
+  text-align: center;
+  width: 75vw;
+}
+
+footer a {
+  text-decoration: none;
+  color: blue;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#verse-text p,
+#verse-text a {
+  font-family: "Roboto", sans-serif;
+}
+
+#verse-text p:first-child {
+  font-size: 54px;
+}
+
+#verse-text p:nth-child(3) {
+  font-size: 32px;
+}
+
+#verse-text a {
+  padding-top: 20px;
+  text-decoration: none;
+  font-size: 28px;
+  color: white;
+}
+
+#verse-text a:hover {
+  text-decoration: underline;
+}
+
+/* Image grid styles */
+#image-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 20px 0;
+}
+
+.image-post {
+  width: 24.5vw;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+#image-container > div:nth-child(1) {
+  background: url(./images/promo_iphone5s.jpg);
+}
+
+#image-container > div:nth-child(2) {
+  background: url(./images/promo_iphone5c.jpg);
+}
+
+#image-container > div:nth-child(3) {
+  background: url(./images/promo_30_years.jpg);
+}
+
+#image-container > div:nth-child(4) {
+  background: url(./images/promo_supplier.jpg);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  font-size: 10px;
+  color: #6e6e6e;
+}
+
+footer li + li::before {
+  content: "|";
+  margin: 0 5px;
+}
