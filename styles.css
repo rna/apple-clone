@@ -124,27 +124,10 @@ footer a:hover {
   margin: 5px 0 20px 0;
 }
 
-.image-post {
-  width: 24.5vw;
+#image-container img {
+  width: 24.9vw;
   height: 200px;
-  background-position: center;
-  background-size: cover;
-}
-
-#image-container > div:nth-child(1) {
-  background: url(./images/promo_iphone5s.jpg);
-}
-
-#image-container > div:nth-child(2) {
-  background: url(./images/promo_iphone5c.jpg);
-}
-
-#image-container > div:nth-child(3) {
-  background: url(./images/promo_30_years.jpg);
-}
-
-#image-container > div:nth-child(4) {
-  background: url(./images/promo_supplier.jpg);
+  margin-right: 2px;
 }
 
 /* Footer Styles */
