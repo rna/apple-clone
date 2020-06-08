@@ -1,6 +1,9 @@
 # apple-clone
 Its a project to create replica of the Apple's old Home Page.
 
+## Screenshot
+![Apple Home Page](https://i.imgur.com/4bdgXqR.png)
+
 ## Description
 This project clones the Apple's old version Homepage in order to solidify knowledge in the concepts of:
 - Using images as a background
